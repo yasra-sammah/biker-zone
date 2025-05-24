@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+    <link rel="shortcut icon" href="images/icons/motorbike.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+       <!-- <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        "bike-bg":"rgba(251, 140, 112, 0.19)";
+      }
+    </style> -->
+     
+
+
+</head>
+<body class="font-poppins">
+    <header class="md:container md:mx-auto" >
+    <!-- navbar section -->
+        <div class="navbar bg-base-100 shadow-sm">
+  <div class=" flex flex-1">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Home</a></li>
+        <li><a>Shop</a></li>
+        <li><a>News</a></li>
+        <li><a>Contact</a></li>
+
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl">Biker <Span class="text-red-600 font-bold">Zone</Span></a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Home</a></li>
+        <li><a>Shop</a></li>
+        <li><a>News</a></li>
+        <li><a>Contact</a></li>
+    </ul>
+  </div>
+  <div class="">
+    <button class="btn bg-[#E76F51] text-white">LogIn </button> 
+ </div>
+</div>
+    </header>
+
+    <main class="md:container md:mx-auto">
+        <div class="carousel w-full h-[500px] bg-[#e7b5a9] ">
+  <div id="slide1" class="carousel-item relative w-full">
+    <div class="flex flex-col md:flex-row p-5 md:p-20 gap-12">
+        <div class="space-y-5 flex-1">
+            <h2 class="text-4xl font-bold ">
+                Honda CB650R,<br>
+                Yamaha XSR700/XSR900
+            </h2>
+            <p>
+                The Honda CB650R is a naked bike that combines modern styling with a powerful 649cc engine. 
+                It features a lightweight chassis, advanced suspension, and a comfortable riding position.
+                The Yamaha XSR700 and XSR900 are retro-styled bikes that offer suspension systems.
+                The XSR700 is powered by a 689cc engine, while the XSR900 features an 847cc engine.
+            </p>
+            
+             <button class="btn bg-[#E76F51] text-white border-none">
+                Purchase
+            </button>
+        </div>
+        <div class="flex-1">
+            <img
+            src="images/slider/bike1.png"
+            class="w-[400px] h-[343px]" />
+        </div>
+    </div>
+    
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <!-- slide 2 -->
+  <div id="slide2" class="carousel-item relative w-full">
+   <div class="flex flex-col md:flex-row p-5 md:p-20 gap-12">
+        <div class="space-y-5 flex-1">
+            <h2 class="text-6xl font-bold ">
+                Ducati Scrambler <br>
+                 Cafe Racer
+            </h2>
+            <p>
+                The Ducati Scrambler Cafe Racer is a stylish and powerful motorcycle that combines classic design with modern performance.
+                 It features a 803cc engine, retro-inspired styling, and advanced suspension for a thrilling ride.
+            </p>
+             <button class="btn bg-[#E76F51] text-white border-none">
+                Purchase
+            </button>
+        </div>
+        <div class="flex-1">
+            <img
+            src="images/slider/bike2.png"
+            class="w-[450px] h-[343px]" />
+        </div>
+    </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide3" class="carousel-item relative w-full">
+    <div class="flex flex-col md:flex-row p-5 md:p-20 gap-12">
+        <div class="space-y-5 flex-1">
+            <h2 class="text-6xl font-bold ">
+               Triumph Daytona 675.
+            </h2>
+            <p>
+                The Triumph Daytona 675 is a high-performance sport bike known for its agility and power.
+                 It features a 675cc engine, advanced suspension, and a lightweight frame for exceptional handling.
+                 The Daytona 675 is designed for riders who crave speed and precision on the track or the road.
+            </p>
+             <button class="btn bg-[#E76F51] text-white border-none">
+                Purchase
+            </button>
+        </div>
+        <div class="flex-1">
+            <img
+            src="images/slider/bike3.png"
+            class="w-[400px] h-[343px]" />
+        </div>
+    </div>
+   
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide4" class="carousel-item relative w-full">
+     <div class="flex flex-col md:flex-row p-5 md:p-20 gap-12">
+        <div class="space-y-5 flex-1">
+            <h2 class="text-6xl font-bold ">
+                Harley-Davidson LiveWire
+            </h2>
+            <p>
+                The Harley-Davidson LiveWire is an electric motorcycle that combines iconic styling with cutting-edge technology.
+                 It features a powerful electric motor, advanced suspension, and a range of modern features for a thrilling ride.
+                 The LiveWire is designed for riders who want the freedom of the open road without the noise and emissions of traditional motorcycles.
+            </p>
+             <button class="btn bg-[#E76F51] text-white border-none">
+                Purchase
+            </button>
+        </div>
+        <div class="flex-1">
+            <img
+            src="images/slider/bike4.png"
+            class="w-[400px] h-[343px]" />
+        </div>
+    </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+        </div>
+
+        <!-- featured section -->
+         <div class="featured-section">
+          <h1 class="text-4xl font-bold text-center mt-14">
+            Fetured Bikes In This Year
+          </h1>
+          <p class="text-center text-red-600 mt-4">
+            Best bike collection
+          </p>
+          <div class="featured-image mt-10 flex flex-col md:flex-row justify-center gap-8 mb-10">
+            <img class="grayscale" src="images/others/feature-bike.png" alt="">
+            <img src="images/others/feature-bike.png" alt="">
+            <img class="grayscale" src="images/others/feature-bike.png" alt="">
+          </div>
+         </div>
+
+         <div class="latest-news">
+          <h1 class="text-4xl font-bold text-center mt-14">
+            Latest News
+          </h1>
+          <div class="latest-image-news flex flex-col md:flex-row justify-center gap-4 mt-10 mb-10">
+              <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/others/latest1.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-start space-y-3">
+                  <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                    <p>
+                    The Ducati XDIAVEL S-73 is a powerful cruiser motorcycle featuring a 1262cc engine,
+                    advanced electronics, and a unique design.It offers a comfortable riding position and modern 
+                    technology for an exhilarating ride. 
+                    </p>
+                  <div class="card-actions">
+                    <button class="btn bg-[#E76F51] text-white">Read More</button>
+                  </div>
+                </div>
+              </div>
+              <!-- latest 2 -->
+               <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/others/latest2.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-start space-y-3">
+                  <h2 class="card-title">Motorcycles & Scooters</h2>
+                    <p>
+                    Discover the latest trends in motorcycles and scooters, featuring innovative designs, 
+                    fuel-efficient engines, and advanced safety features. Whether for city commuting or 
+                    long rides, these vehicles offer versatility, comfort, and performance to 
+                    suit every rider's needs.
+                    </p>
+                  <div class="card-actions">
+                    <button class="btn bg-[#E76F51] text-white">Read More</button>
+                  </div>
+                </div>
+              </div>
+              <!-- latest 3 -->
+               <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/others/latest3.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-start space-y-3">
+                  <h2 class="card-title">2021 Honda CBR500R</h2>
+                    <p>
+                    The 2021 Honda CBR500R is a sporty and versatile motorcycle featuring a 471cc 
+                    parallel-twin engine, aggressive styling, and advanced safety features like ABS.
+                     It offers a comfortable riding position, making it ideal for both new and experienced 
+                     riders seeking performance and reliability.
+                    </p>
+                  <div class="card-actions">
+                    <button class="btn bg-[#E76F51] text-white">Read More</button>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+         <div class="happy-client">
+           <h1 class="text-4xl font-bold text-center mt-14">
+            Happy <span class="text-[#E76F51]">Clients says</span>
+          </h1>
+          </div>
+
+
+          <!-- user -->
+          <div class="user-review flex flex-col md:flex-row">
+             <div class="card bg-base-100 w-96 shadow-sm mt-10 ml-10">
+            <figure>
+              <img
+                src="images/others/user-1.png"
+                alt="Shoes" class="w-[150px] mt-10" />
+            </figure>
+            <div class="card-body text-center space-y-3">
+                <p>
+                "I had an amazing experience with Biker Zone! The staff was knowledgeable and helped me 
+                choose the perfect bike. Highly recommended for all motorcycle enthusiasts."
+                <br>
+                </p>
+                <div class="rating items-center justify-center">
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" aria-label="2 star"   />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" aria-label="4 star" checked="checked" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                </div>
+                <span>
+                <p class="text-[#007AFF] font-bold">Regina Miles</p>
+                </span>
+                <p class="text-black font-bold">Banker</p>
+
+              
+            </div>
+          </div>
+
+          <!-- user 2 -->
+           <div class="card bg-base-100 w-96 shadow-sm mt-10 ml-10">
+            <figure>
+              <img
+                src="images/others/user-2.png"
+                alt="Shoes" class="w-[150px] mt-10" />
+            </figure>
+            <div class="card-body text-center space-y-3">
+                <p>
+                "I recently purchased my bike from Biker Zone and the process was smooth and hassle-free. 
+                The team provided excellent advice and after-sales support. 
+                I’m very satisfied with my experience!"
+                <br>
+                </p>
+                <div class="rating items-center justify-center">
+                  <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                  <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" aria-label="2 star"  />
+                  <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" aria-label="3 star" checked="checked" />
+                  <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                  <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                </div>
+                <span>
+                <p class="text-[#007AFF] font-bold">John Doe</p>
+                </span>
+                <p class="text-black font-bold">Banker</p>
+
+              
+            </div>
+          </div>
+
+          <!-- user 3 -->
+            <div class="card bg-base-100 w-96 shadow-sm mt-10 ml-10">
+            <figure>
+              <img
+                src="images/others/user-3.png"
+                alt="Shoes" class="w-[150px] mt-10" />
+            </figure>
+            <div class="card-body text-center space-y-3">
+                <p>
+                "Biker Zone exceeded my expectations! The variety of bikes available is impressive, and the staff
+                was incredibly helpful in finding the right fit for me.
+                <br>
+                </p>
+                <div class="rating items-center justify-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" aria-label="2 star"/>
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" aria-label="5 star"checked="checked"  />
+                </div>
+                <span>
+                <p class="text-[#007AFF] font-bold">Smith john</p>
+                </span>
+                <p class="text-black font-bold">Banker</p>
+
+              
+            </div>
+          </div>
+          </div>
+           
+          
+   
+
+</main>
+    <footer>
+
+    </footer>
+</body>
+</html>
